@@ -4,6 +4,8 @@ def hello_t(array)
     if block_given?
     yield(array[i])
     i = i + 1
+  else
+    return nil
     end
   end
   return array
